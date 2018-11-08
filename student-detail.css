@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+  }
+  
+  body {
+    padding: 25px;
+    background-image: url('assets/textures/fabric_plaid.png');
+    margin: 0 auto;
+    width: 90%;
+    font-family: museo;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid blue;
+  }
+  
+  .left-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    width: 35%;
+    border: 2px solid red;
+  }
+  
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+  }
+  
+  .half-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  
+  .smallicons {
+    width: 30px;
+  }
+  
+  .featured {
+    background-image: url('https://www.nationalgeographic.com/content/dam/photography/photos/000/000/6.adapt.1900.1.jpg');
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-size: cover;
+    height: 25vh;
+    color: white;
+    flex-wrap: wrap;
+    border: 7px solid white;
+  }
+  
+  .featured-div {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolio-top-right{
+    background-color: white;
+    color: black;
+    width: 30%;
+    flex-wrap: wrap;
+  }
+  .portfolio-bottom-right{
+    background-color: white;
+    color: black;
+    width: 30%;
+    flex-wrap: wrap;
+  }
+  
+  .bottom {
+    display: flex;
+    height: 10%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: #646464;
+    border: 2px solid green;
+    background-blend-mode: multiply;
+  }
+  
+  .recent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid red;
+  }
+  
+  body img {
+    align-self: center;
+    width: 15%;
+    margin: 10px;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: flex-end;
+    background: url('assets/textures/az_subtle.png');
+    padding: 5px 50px;
+    margin: 20px;
+    background-color: #BAB9B9;
+    background-blend-mode: multiply;
+    color: white;
+    border-radius: 20px;
+    width: 100px;
+  }
+  
+  .button-div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer {
+    display: inline-flex;
+    border: 1px solid red;
+    height: 25vh
+  }
+  
+  .footer-div {
+    background: url('assets/textures/az_subtle.png');
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid blue;
+    background-blend-mode: multiply;
+    background-color: #BAB9B9;
+    padding: 10px 35px 10px 35px;
+    width: 50%;
+  }
+  
+  .footer-right img {
+    width: 15%;
+  }
+  
+  .bottom-band {
+    display: flex;
+    color: white;
+    background-color: #666666;
+    justify-content: center;
+    height: 4vh;
+    align-items: center;
+  }
+  .footer-about{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  a:link{
+    text-decoration: none;
+    color: light-grey;
+  }
+  a:visited{
+    text-decoration: none;
+    color: light-grey;
+  }
+  @font-face {
+    font-family: museo;
+    src: url(assets/fonts/museo/museo-700-webfont.woff);
+  }
+  @font-face {
+    font-family: blanch;
+    src: url(assets/fonts/blanch/BLANCH_CAPS_INLINE.ttf);
+  }

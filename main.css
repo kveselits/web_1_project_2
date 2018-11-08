@@ -4,9 +4,10 @@
 
 body {
   padding: 25px;
-  background-image: url("assets\textures\fabric_plaid.png");
+  background-image: url('assets/textures/fabric_plaid.png');
   margin: 0 auto;
   width: 90%;
+  font-family: museo;
 }
 
 nav {
@@ -86,14 +87,14 @@ body img {
 .button {
   display: flex;
   justify-content: flex-end;
-  background: url("assets\textures\az_subtle.png");
+  background: url('assets/textures/az_subtle.png');
   padding: 5px 50px;
   margin: 20px;
   background-color: #BAB9B9;
   background-blend-mode: multiply;
   color: white;
   border-radius: 20px;
-  width: 80px;
+  width: 100px;
 }
 
 .button-div {
@@ -108,7 +109,7 @@ body img {
 }
 
 .footer-div {
-  background: url("assets\textures\az_subtle.png");
+  background: url('assets/textures/az_subtle.png');
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
@@ -116,7 +117,7 @@ body img {
   border: 2px solid blue;
   background-blend-mode: multiply;
   background-color: #BAB9B9;
-  padding: 10px;
+  padding: 10px 35px 10px 35px;
   width: 50%;
 }
 
@@ -131,4 +132,25 @@ body img {
   justify-content: center;
   height: 4vh;
   align-items: center;
+}
+.footer-about{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+a:link{
+  text-decoration: none;
+  color: light-grey;
+}
+a:visited{
+  text-decoration: none;
+  color: light-grey;
+}
+@font-face {
+  font-family: museo;
+  src: url(assets/fonts/museo/museo-700-webfont.woff);
+}
+@font-face {
+  font-family: blanch;
+  src: url(assets/fonts/blanch/BLANCH_CAPS_INLINE.ttf);
 }
