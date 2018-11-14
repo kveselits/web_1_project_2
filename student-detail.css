@@ -7,9 +7,9 @@ body {
 
 p {
     font-family: 'Museo300', Fallback, sans-serif;
-    font-size: 1.1em;
+    font-size: 1.1vw;
     font-weight: bold;
-    line-height: 1.4;
+    line-height: 1.3;
     color: #7b7b7b;
 }
 h1{
@@ -19,13 +19,14 @@ h1{
   color: #434342;
   font-family: 'Museo500', Fallback, sans-serif;
   text-transform: uppercase;
+  padding: 10px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    min-height: 5%;
-    max-height: 15%;
+    min-height: 5vh;
+    max-height: 15vh;
     font-family: 'Museo500', Fallback, sans-serif;
     color: #999999;
     text-transform: uppercase;
@@ -64,6 +65,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: baseline;
+    padding-right: 20px;
     height: 60vh;
 }
 
@@ -71,7 +73,9 @@ nav {
     display: flex;
     flex-direction: column-reverse;
     height: 35vh;
-    width: 50vw;
+    min-width: 45vw;
+    max-width: 55vw;
+    margin-right: 10px;
     color: white;
     background-image: url('assets/portfolio/6.adapt.1900.1.jpg');
     border: 7px solid white;
@@ -90,8 +94,9 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 0 20px 0 20px;
-    margin-right: 20px;
-    width: 50vw;
+    margin-right: 10px;
+    min-width: 45vw;
+    max-width: 55vw;
     height: 15vh;
 }
 
@@ -107,23 +112,31 @@ nav {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 25vw;
-    height: 15vh;
-    padding: 20px;
-    margin: 0 20px 0 20px;
+    object-fit: contain;
+    min-width: 20vw;
+    max-width: 25vw;
+    max-height: 20vh;
+    padding: 20px 20px 20px 20px;
+    margin: 0 10px 0 10px;
     background-color: white;
     color: #919191;
 }
-.portrait{
-  height: 140px;
-  width: 140px;
+.half{
+    width: 50%;
+    padding-right: 10px;
+}
+.half img{
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px 0 10px;
 }
 
 .portfolio-bottom-right {
-    width: 25vw;
+    min-width: 20vw;
+    max-width: 25vw;
     height: 35vh;
-    padding: 20px 20px 0 20px;
-    margin: 20px 20px 0 20px;
+    padding: 20px 10px 10px 10px;
+    margin: 20px 10px 0 10px;
     background-color: white;
     color: #a2a2a2;
     overflow: hidden;
@@ -141,6 +154,7 @@ nav {
     margin: 5px;
     padding: 5px;
     height: 135px;
+    max-width: 100%;
 }
 
 .button {
@@ -168,15 +182,13 @@ nav {
     background-color: #666666;
     justify-content: center;
     align-items: center;
-    min-height: 6%;
-    max-height: 8%;
+    height: 5vh;
 }
 
 .footer {
     display: flex;
     height: 25vh;
     padding-bottom: 20px;
-    overflow: hidden;
     
 }
 
@@ -190,12 +202,13 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 15px 15px 50px 15px;
+    padding: 40px 15px 50px 15px;
     width: 50%;
     background: url('assets/textures/az_subtle.png');
     background-color: #acaca4;
     background-blend-mode: multiply;
     color: #3e3e3d;
+    overflow: hidden;
 }
 
 .footer-right img {
@@ -242,32 +255,45 @@ span {
     font-size: 80%;
 }
 
+@media only screen and (max-width: 1024px) {
+    .footer-div:nth-child(3) {
+        display:none;
+    }
+    p{
+        font-size: 1.9vw;
+    }
+    .heading, h1,h2,h3,h4,h5{
+        font-size: 90%;
+    } 
+    .portfolio-top-right img{
+        display: none;
+    }
+    img{
+        width: 80%;
+    }
+}
+
 @font-face {
     font-family: 'Museo300';
     src: url('assets/fonts/museo/museo-300-webfont.eot');
-    /* IE9 Compat Modes */
-    src: url('assets/fonts/museo/museo-300-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-    url('assets/fonts/museo/museo-300-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+    src: url('assets/fonts/museo/museo-300-webfont.woff') format('woff'),
+    url('assets/fonts/museo/museo-300-webfont.ttf') format('truetype'),
     url('assets/fonts/museo/museo-300-webfont.svg#svgMuseo300') format('svg');
-    /* Legacy iOS */
 }
 
 @font-face {
     font-family: 'Museo500';
     src: url('assets/fonts/museo/museo-500-webfont.eot');
-    /* IE9 Compat Modes */
-    src: url('assets/fonts/museo/museo-500-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-    url('assets/fonts/museo/museo-500-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+    src: url('assets/fonts/museo/museo-500-webfont.woff') format('woff'),
+    url('assets/fonts/museo/museo-500-webfont.ttf') format('truetype'),
     url('assets/fonts/museo/museo-500-webfont.svg#svgMuseo500') format('svg');
-    /* Legacy iOS */
 }
 
 @font-face {
     font-family: 'Museo700';
     src: url('assets/fonts/museo/museo-700-webfont.eot');
-    /* IE9 Compat Modes */
-    src: url('assets/fonts/museo/museo-700-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-    url('assets/fonts/museo/museo-700-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+    src: url('assets/fonts/museo/museo-700-webfont.woff') format('woff'),
+    url('assets/fonts/museo/museo-700-webfont.ttf') format('truetype'),
     url('assets/fonts/museo/museo-700-webfont.svg#svgMuseo700') format('svg');
 }
 
