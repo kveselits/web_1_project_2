@@ -1,170 +1,287 @@
-* {
-    margin: 0;
-  }
-  
-  body {
-    padding: 25px;
+html,
+body {
     background-image: url('assets/textures/fabric_plaid.png');
     margin: 0 auto;
     width: 90%;
-    font-family: museo;
-  }
-  
-  nav {
+}
+
+p {
+    font-family: 'Museo300', Fallback, sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #7b7b7b;
+}
+h1{
+  color: #6d6d6d;
+}
+.heading{
+  color: #434342;
+  font-family: 'Museo500', Fallback, sans-serif;
+  text-transform: uppercase;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
-    border: 1px solid blue;
-  }
-  
-  .left-container {
+    min-height: 5%;
+    max-height: 15%;
+    font-family: 'Museo500', Fallback, sans-serif;
+    color: #999999;
+    text-transform: uppercase;
+    font-size: 90%;
+}
+
+.left-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px;
     width: 35%;
-    border: 2px solid red;
-  }
-  
-  .right-container {
+}
+
+.right-container {
     display: flex;
     flex-direction: column;
-    width: 15%;
-  }
-  
-  .half-container {
+}
+
+.half-container {
     display: flex;
     justify-content: flex-end;
-    padding: 10px;
-  }
-  
-  .smallicons {
+    padding: 8px;
+    font-size: 90%;
+    color: #dddddd;
+}
+
+.smallicons {
     width: 30px;
-  }
-  
-  .featured {
-    background-image: url('https://www.nationalgeographic.com/content/dam/photography/photos/000/000/6.adapt.1900.1.jpg');
+    padding: 5px;
+}
+
+.featured-parent {
     display: flex;
-    width: 70%;
-    justify-content: flex-end;
+    flex-wrap: wrap;
     flex-direction: column;
-    background-size: cover;
-    height: 25vh;
+    align-items: center;
+    justify-content: baseline;
+    height: 60vh;
+}
+
+.featured-project {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 35vh;
+    width: 50vw;
     color: white;
-    flex-wrap: wrap;
+    background-image: url('assets/portfolio/6.adapt.1900.1.jpg');
     border: 7px solid white;
-  }
-  
-  .featured-div {
+}
+
+.grey-bar {
     display: flex;
-    width: 50%;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-  }
-  .portfolio-top-right{
-    background-color: white;
-    color: black;
-    width: 30%;
-    flex-wrap: wrap;
-  }
-  .portfolio-bottom-right{
-    background-color: white;
-    color: black;
-    width: 30%;
-    flex-wrap: wrap;
-  }
-  
-  .bottom {
-    display: flex;
-    height: 10%;
-    align-items: flex-end;
     justify-content: flex-end;
-    background-color: #646464;
-    border: 2px solid green;
-    background-blend-mode: multiply;
-  }
-  
-  .recent {
+    background-color: rgba(100, 93, 84, 0.6);
+    height: 5vh;
+    padding-right: 15px;
+}
+
+.portfolio-bottom {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    border: 2px solid red;
-  }
-  
-  body img {
-    align-self: center;
-    width: 15%;
-    margin: 10px;
-  }
-  
-  .button {
+    padding: 0 20px 0 20px;
+    margin-right: 20px;
+    width: 50vw;
+    height: 15vh;
+}
+
+.portfolio-bottom img {
+    flex: 1 0 21%;
+    margin: 6px;
+    width: 30.4%;
+    height: 170px;
+    border: 7px solid white;
+}
+
+.portfolio-top-right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 25vw;
+    height: 15vh;
+    padding: 20px;
+    margin: 0 20px 0 20px;
+    background-color: white;
+    color: #919191;
+}
+.portrait{
+  height: 140px;
+  width: 140px;
+}
+
+.portfolio-bottom-right {
+    width: 25vw;
+    height: 35vh;
+    padding: 20px 20px 0 20px;
+    margin: 20px 20px 0 20px;
+    background-color: white;
+    color: #a2a2a2;
+    overflow: hidden;
+}
+
+.recent {
+    display: flex;
+    flex-wrap: wrap;
+    height: 35vh;
+    overflow: hidden;
+}
+
+.recent img {
+    flex: 1 0 21%;
+    margin: 5px;
+    padding: 5px;
+    height: 135px;
+}
+
+.button {
     display: flex;
     justify-content: flex-end;
     background: url('assets/textures/az_subtle.png');
-    padding: 5px 50px;
-    margin: 20px;
     background-color: #BAB9B9;
     background-blend-mode: multiply;
-    color: white;
     border-radius: 20px;
-    width: 100px;
-  }
-  
-  .button-div {
+    padding: 2px 20px 2px 20px;
+    height: 2vh;
+}
+
+.button-div {
     display: flex;
     justify-content: center;
-  }
-  
-  .footer {
-    display: inline-flex;
-    border: 1px solid red;
-    height: 25vh
-  }
-  
-  .footer-div {
-    background: url('assets/textures/az_subtle.png');
-    display: inline-flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    border: 2px solid blue;
-    background-blend-mode: multiply;
-    background-color: #BAB9B9;
-    padding: 10px 35px 10px 35px;
-    width: 50%;
-  }
-  
-  .footer-right img {
-    width: 15%;
-  }
-  
-  .bottom-band {
+    overflow: hidden;    
+    margin: 15px 20px 15px 20px;
+}
+
+.bottom-band {
     display: flex;
     color: white;
     background-color: #666666;
     justify-content: center;
-    height: 4vh;
     align-items: center;
-  }
-  .footer-about{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  }
-  a:link{
+    min-height: 6%;
+    max-height: 8%;
+}
+
+.footer {
+    display: flex;
+    height: 25vh;
+    padding-bottom: 20px;
+    overflow: hidden;
+    
+}
+
+.portfolio-text {
+    color: #7d7d7d;
+    padding-left: 10px;
+}
+
+.footer-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px 50px 15px;
+    width: 50%;
+    background: url('assets/textures/az_subtle.png');
+    background-color: #acaca4;
+    background-blend-mode: multiply;
+    color: #3e3e3d;
+}
+
+.footer-right img {
+    width: 20%;
+}
+
+#footer-left {
+    width: 100%;
+}
+
+.footer-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px 0 20px;
+}
+
+.footer-about img {
+    width: 50px;
+}
+
+input {
+    width: 98%;
+}
+
+a:link, a:visited {
     text-decoration: none;
-    color: light-grey;
-  }
-  a:visited{
-    text-decoration: none;
-    color: light-grey;
-  }
-  @font-face {
-    font-family: museo;
-    src: url(assets/fonts/museo/museo-700-webfont.woff);
-  }
-  @font-face {
-    font-family: blanch;
-    src: url(assets/fonts/blanch/BLANCH_CAPS_INLINE.ttf);
-  }
+    color: #7f7f7f;
+}
+
+.footer a:link, a:visited {
+  text-decoration: none;
+  color: #434342;
+}
+
+a:hover {
+    color: red;
+}
+
+
+span {
+    color: white;
+    font-size: 80%;
+}
+
+@font-face {
+    font-family: 'Museo300';
+    src: url('assets/fonts/museo/museo-300-webfont.eot');
+    /* IE9 Compat Modes */
+    src: url('assets/fonts/museo/museo-300-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+    url('assets/fonts/museo/museo-300-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('assets/fonts/museo/museo-300-webfont.svg#svgMuseo300') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Museo500';
+    src: url('assets/fonts/museo/museo-500-webfont.eot');
+    /* IE9 Compat Modes */
+    src: url('assets/fonts/museo/museo-500-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+    url('assets/fonts/museo/museo-500-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('assets/fonts/museo/museo-500-webfont.svg#svgMuseo500') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Museo700';
+    src: url('assets/fonts/museo/museo-700-webfont.eot');
+    /* IE9 Compat Modes */
+    src: url('assets/fonts/museo/museo-700-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+    url('assets/fonts/museo/museo-700-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('assets/fonts/museo/museo-700-webfont.svg#svgMuseo700') format('svg');
+}
+
+@font-face {
+    font-family: 'Blanch-Condensed';
+    src: url('assets/fonts/blanch/BLANCH_CONDENSED.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Blanch-Caps-Inline';
+    src: url('assets/fonts/blanch/BLANCH_CAPS_INLINE.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Blanch-Caps';
+    src: url('assets/fonts/blanch/BLANCH_CAPS.ttf') format('truetype');
+}
